@@ -36,8 +36,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          # Ruta corregida para subir la carpeta con la página web publicada
+          path: './docs'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
